@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Formulaire d'article</h1>
+    <form id="postForm" action="valide2.php" method="get"> 
+        <label for="reference">Référence (3 lettres, _ , 3 chiffres) :</label>
+        <input type="text" id="reference" name="reference" pattern="[a-zA-Z]{3}_[0-9]{3}" title="Veuillez entrer une référence valide (par exemple, ABC_123)" required>
+        <br><br>
+        <label for="libelle">Libellé</label>
+        <input type="text" id="libelle" name="lbl" title="S'il vous plaît entrer un ou plusieurs chiffres" required>
+        <button onclick="">Vérifier lib</button>
+        
+        <label for="choix">Fournisseur</label>
+        <select id="choix" name="choix">
+            <option value="fournisseur1">Fournisseur 1</option>
+            <option value="fournisseur2">Fournisseur 2</option>
+            <option value="fournisseur3">Fournisseur 3</option>
+        </select>
+
+        <label for="price">Prix</label>
+        <input type="number" name="price" title="Entrez un prix" required>
+        <br><br>
+
+        <label for="Qte">Quantité</label>
+        <input type="number" name="QTE" id="Qte" title="Entrez une quantité" required>
+        <br>
+
+        <input type="submit" value="Valider">
+    </form>
+
+</body>
+</html>
