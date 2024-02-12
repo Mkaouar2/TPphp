@@ -7,11 +7,12 @@ if (isset($_GET['reference'])&&isset($_GET['lbl'])&&isset($_GET['choix'])&&isset
     $z=$_GET['QTE'];
 
     if(!empty($p)&&!empty($q)&&!empty($a)&&!empty($r)&&!empty($z)){
-        echo "Reference: $p\n";
-        echo "libelle:  $q\n";
-        echo "Choix: $a\n";
-        echo "Price: $r\n";
-        echo "Quantite: $z\n";
+        echo "Details of  the product : <br>";
+        echo "Reference: $p<br>";
+        echo "libelle:  $q<br>";
+        echo "Choix: $a<br>";
+        echo "Price: $r<br> ";
+        echo "Quantite: $z<br>";
     }else {
         header("location: authentification.html");
     }
